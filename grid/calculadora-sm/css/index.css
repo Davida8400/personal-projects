@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;1,300&family=Ubuntu&display=swap');
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.calculadora {
+  background-color: #081827;
+  height: 430px;
+  width: 270px;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.calculadora-screen {
+  margin: 0;
+  padding: 0;
+  height: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.screen {
+  text-align: right;
+  direction: ltr;
+  height: 80%;
+  width: 90%;
+  resize: none;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 25px;
+  background-color: #081827;
+  color: white;
+  border: none;
+  border-bottom: 1px solid #9F9F9F;
+}
+
+.screen:focus {
+  outline: none;
+}
+
+.calculadora-numbers {
+  height: 100%;
+  grid-row-gap: 10px;
+  margin-top: 15px;
+  padding: 2px;
+}
+
+.botones {
+  display: grid;
+  grid-template-columns: 22% 22% 22% 22%;
+  justify-items: center;
+  gap: 10px;
+}
+
+button {
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  font-size: large;
+  background-color: #203C56;
+  color: white;
+}
+
+.botones button:nth-child(-n+3) {
+  background-color: #FFAA5E;
+  color: #081827;
+}
+
+.especial {
+  background-color: #544E68;
+  color: #FFECD6;
+}
